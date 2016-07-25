@@ -2,64 +2,58 @@
 <html>
 <head>
 
-<!-- <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'> -->
+<!-- <link rel="#" href="#" type="text/css" /> -->
+
+<title>Slide 1 - Start</title>
 
 <style>
 
-#i {
-	font-family: 'Righteous';
-	color: blue;
+div.canvas {
+    width:600px;
+    margin: auto;
+    border: 0px solid #ffffff;
 }
 
-#box{
-	background-color:white;
-	width:100px;
-	height:400px;
-	animation-name:moveDown;
-	animation-duration:2s;
-	animation-iteration-count: infinite;
-	position:absolute;
-	top:0px;
-	left:0px;
+.circle {
+	border-radius: 50%;
+	width: 400px;
+	height: 400px; 
+	/* width and height can be anything, as long as they're equal */
 }
 
-@keyframes moveDown {
+/* Create the animation blocks */
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
 
-	0%{transform:translateY(0px);}
-
-	20%{transform:translateY(20px);}
-
-
-	40%{transform:translateY(50px);}
-
-
-	60%{transform:translateY(100px);}
-
-
-	80%{transform:translateY(150px);}
-
-
-	100%{transform:translateY(200px);}
+/* Spinning, gradient circle; CSS only! */
+#advanced {
+	width: 200px;
+	height: 200px;
+	
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+	background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+	
+	animation-name: spin; 
+	animation-duration: 3s; /* 3 seconds */
+	animation-iteration-count: infinite; 
+	animation-timing-function: linear;
 }
 
 </style> 
-
+</head>
 
 <body>
+	
+<div class="canvas">
 
-<audio autoplay loop src="kiss.mp3"></audio>
+<div id="advanced"></div>
+	
+</div>
 
-<div id="box"></div>
-<p id="i">I</p>
-<p class="love">love</p> 
-<p class="you">you</p> 
-<p class="more">more</p> 
 </body> 
 
-
-	</title>
-</head>
-<body>
-
-</body>
+<footer></footer>
 </html>
