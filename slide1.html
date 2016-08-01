@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+<title>Slide 1 - Start</title>
+
+<style>
+
+div.canvas {
+    max-width: 900px;
+    margin: auto;
+    border: 0px solid #ffffff;
+    padding-top: 5%;
+}
+
+div.canvas2 {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 10%;
+    
+}
+
+div.canvas3 {
+    width:600px;
+    height: 200px;
+    padding-top: 20px;
+    margin: 0 auto;
+    border: 0px solid #ffffff;
+}
+
+/* Spinning, gradient circle; CSS only! */
+#advanced {
+  width: 600px;
+  height: 600px;
+  background: orange; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(yellow, orange); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(yellow, orange); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(yellow, orange); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(yellow, orange); /* Standard syntax (must be last) */
+  border-radius: 50%;
+  animation-name: spin; 
+  animation-duration: 3s; /* 3 seconds */
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+  box-shadow: 0px 0px 18px 1px #EFEFEF;
+  margin: auto;
+
+}
+
+#advanced:hover {
+  box-shadow: none;
+  background: -webkit-radial-gradient(orange, yellow); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(orange, yellow); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(orange, yellow); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(orange, yellow); /* Standard syntax (must be last) */
+}
+
+p.starttext {
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+    top: 50%;
+  transform: translateY(-50%);
+  font-family: Comfortaa; 
+  color: black;
+  text-decoration: none; 
+}
+
+a {
+  text-decoration: none; 
+}
+
+.blueback  {
+    background-image: url("backgroundhatch.jpg");
+}
+
+
+p.nametext {
+  font-size: 80px;
+  /*text-align: center;*/
+  /*position: relative;*/
+    top: 50%;
+  transform: translateY(-50%);
+  font-family: Comfortaa; 
+  color: white;
+  text-decoration: none; 
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 auto;
+/*    display: inline-block;
+*/    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+
+input[type=submit] {
+    width: 80%;
+    background-color: #e37733;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    font-size: 17px;
+    justify-content: left;
+}
+
+input[type=submit]:hover {
+    background-color: #ca6a2e;
+}
+
+t
+table {
+    border-collapse: collapse;
+    width: 100%;
+    align: center;
+}
+
+th {
+    height: 50px;
+}
+
+
+
+p.hitext {
+  font-size: 200px;
+  padding-top: 10px;
+  /*text-align: center;*/
+  /*position: relative;*/
+  font-family: Comfortaa; 
+  color: white;
+  text-decoration: none; 
+  background: url(orangehatch.jpg) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.messagetext {
+  width:600px;
+  height: 200px;
+  font-size: 20px;
+  margin: auto;
+  padding: 30px;
+  /*text-align: center;*/
+  /*position: relative;*/
+  font-family: Comfortaa; 
+  color: white;
+  text-decoration: none; 
+}
+
+.orangebar {
+  width: 100%;
+  height: 150px;
+  background-image: url(orangehatch.jpg);
+}
+
+.next {
+    width: 200px;
+    background-color: #274069;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin: 20px 650px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /*margin: auto;*/
+    font-size: 17px;
+    text-align: center;
+    font-family: Comfortaa;    
+}
+.next:hover {
+    background-color: #1a2c48;
+}
+
+
+
+</style> 
+
+<!-- <script type="text/javascript">
+when push button add one point to user interest score 	
+</script> -->
+</head>
+
+
+<body>
+	
+<div class="canvas">
+
+<a href="slide2.html"><div id="advanced">
+	<p class="starttext">START</p>
+</div></a>
+	
+</div>
+
+</body> 
+
+<footer></footer>
+</html>
